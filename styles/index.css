@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+#header {
+    background-color: rgba(18, 146, 7, 0.638);
+    position: fixed;
+    width: 100%;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+#ul-desktop {
+    list-style: none;
+}
+
+#ul-desktop a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#ul-desktop li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 1.3rem;
+}
+
+#header img {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+
+/* MENU */
+
+.menu-right {
+    display: none;
+}
+
+.menu-options {
+    width: 100%;
+    margin-top: 35px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    left: -100%;
+    background: rgba(18, 146, 7, 0.638);
+    transition: all 0.5s;
+}
+
+#ul-mobile {
+    list-style: none;
+}
+
+#ul-mobile li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#ul-mobile li {
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.inpt:checked~.menu-box-complet .menu-options {
+    transform: translateX(100%);
+}
+
+.hamburguer {
+    position: absolute;
+    background: rgb(19, 146, 7);
+    width: 55px;
+    height: 8px;
+    top: 33px;
+    right: 3px;
+    border-radius: 190px;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: rgb(19, 146, 7);
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -11px;
+    width: 85%;
+    border-radius: 190px;
+}
+
+.hamburguer:after {
+    width: 75%;
+    bottom: -11px;
+    border-radius: 190px;
+}
+
+#ipt-hbm {
+    margin-top: 90px;
+    display: none;
+}
+
+#ipt-hbm:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+#ipt-hbm:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+    display: none;
+}
+
+#ipt-hbm:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* MAIN */
+
+#sectionMain {
+    background-image: url(/images/robertinho.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(226, 226, 226);
+}
+
+#sectionMain h1 {
+    font-size: 5em;
+    margin-bottom: 30px;
+}
+
+#verify {
+    padding: 15px;
+    width: 700px;
+    outline: 0;
+    text-align: center;
+}

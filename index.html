@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="./images/logoipsum-logo-15.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <title>Coisas de Roraima</title>
+
+    <style>
+        @media screen and (max-width: 768px) {
+            #sectionMain h1 {
+                font-size: 3em;
+            }
+            #sectionMain input {
+                padding: 8px;
+                width: 400px;
+            }
+            #ul-desktop {
+                display: none;
+            }
+            #header {
+                justify-content: center;
+            }
+            .menu-right {
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 468px) {
+            #sectionMain h1 {
+                font-size: 1.5em;
+            }
+            #sectionMain input {
+                padding: 5px;
+                width: 200px;
+            }
+            #header img {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <img src="./images/logoipsum-logo-15.svg" alt="ERROR IMAGE">
+            <ul id="ul-desktop">
+                <li> <a href="#">Página inicial</a></li>
+                <li> <a href="#">Sobre nós</a></li>
+                <li> <a href="#">Depoimentos</a></li>
+                <li> <a href="#">Passeios</a></li>
+                <li> <a href="#">Fale conosco</a></li>
+            </ul>
+            <section class="menu-right">
+                <input class="inpt" id="ipt-hbm" type="checkbox">
+                <label for="ipt-hbm">
+            <div class="menu-span">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+                <div class="menu-box-complet ">
+                    <div class="menu-options ">
+                        <ul id="ul-mobile">
+                            <li> <a href="#">Página inicial</a></li>
+                            <li> <a href="#">Sobre nós</a></li>
+                            <li> <a href="#">Depoimentos</a></li>
+                            <li> <a href="#">Passeios</a></li>
+                            <li> <a href="#">Fale conosco</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main id="main">
+            <section id="sectionMain">
+                <h1>ENCONTRE SEU DESTINO</h1>
+                <input id="verify" list="passeios" placeholder="Insira seu destino">
+                <datalist id="passeios">
+                    <option value="Tepequem"></option>
+                    <option value="Lago do Robertinho"></option>
+                    <option value="Monte Roraima"></option>
+                    <option value="Cachoreira véu de noiva"></option>
+                </datalist>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
