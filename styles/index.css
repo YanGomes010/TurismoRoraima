@@ -147,7 +147,7 @@
 /* MAIN */
 
 #sectionMain {
-    background-image: url(/images/robertinho.jpg);
+    background-image: url(../images/robertinho.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
